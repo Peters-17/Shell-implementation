@@ -3,7 +3,7 @@
 2.	To learn how processes are handled with fork(), exec(), and wait()
 3.	To gain exposure to some of the functionality in shells
 4.	To understand how redirection of stdout works
-Score: 120/120
+## Score: 120/120
 ## Overview
 
 Implement a command line interpreter, or shell, on top of Unix. The shell should operate in this basic way: when you type in a command (in response to its prompt), the shell creates a child process that executes the command you entered and then prompts for more user input when it has finished.  More specifically, shells are typically implemented as a simple loop that waits for input and fork()s a new child process to execute the command; the child process then exec()s the specified command while the parent process wait()s for the child to finish before continuing with the next iteration of the loop.
